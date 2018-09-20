@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="2" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="myfirsttestpackeage.clsUserSignUp">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="fnUserRegForm" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- myfirsttestpackeage.clsUserSignUp -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
