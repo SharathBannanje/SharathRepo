@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Sharath.bannanje\workspace_testng\MyFirstTestNGProject\testing.xml</span>
+                    <span>D:\GitRepoProjects\MyFirstTestNGProject\testing.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -143,17 +143,17 @@
                   </a> <!-- fnUserRegForm([aaa1WWW, TRTRT123, 7, Security Ans1, 1, F Name1, M Name1, L Name1, 1, 1, 25/03/1998, 2, 892484YUT62...) -->
                   <span class="method-name">fnUserRegForm</span>
                   <span class="parameters">([aaa1WWW, TRTRT123, 7, Security Ans1, 1, F Name1, M Name1, L Name1, 1, 1, 25/03/1998, 2, 892484YUT62, AABB12345, 94, wuifuiwf@gmail.com, 21, 1122334455, India, Addr1, Street1, Area1, 576101, StateOtr, 1, 1, 345435, 1, A1, A2, A3, India, 400080, StA, 1, 1, 11111, 1, 1, 1])</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;captcha&quot;}
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=69.0.3497.100)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:22.379Z&apos;
 System info: host: &apos;HMECL001767&apos;, ip: &apos;10.16.33.99&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\SHARAT~1.BAN\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 19de34a50045874552d0b5e03bacedc5
-*** Element info: {Using=id, value=captcha}
+Session ID: d2bce621b965d8c13fa5efbf977b6b1a
+*** Element info: {Using=tag name, value=option}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -162,11 +162,15 @@ Session ID: 19de34a50045874552d0b5e03bacedc5
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at myfirsttestpackeage.clsUserSignUp.fnUserRegForm(clsUserSignUp.java:311)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:195)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementsByTagName(RemoteWebElement.java:275)
+	at org.openqa.selenium.By$ByTagName.findElements(By.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:171)
+	at org.openqa.selenium.support.ui.Select.getOptions(Select.java:70)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:177)
+	at pkgGenericFunctions.clsGenericFunctions.fnPopulateDropDown(clsGenericFunctions.java:34)
+	at myfirsttestpackeage.clsUserSignUp.fnUserRegForm(clsUserSignUp.java:176)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -191,7 +195,7 @@ Session ID: 19de34a50045874552d0b5e03bacedc5
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sharath.bannanje\workspace_testng\MyFirstTestNGProject\testing.xml</span>
+            <span class="header-content">D:\GitRepoProjects\MyFirstTestNGProject\testing.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,16 +249,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'fnUserRegForm')
 data.setCell(0, 2, 'myfirsttestpackeage.clsUserSignUp')
-data.setCell(0, 3, 73614);
+data.setCell(0, 3, 17455);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Confirm')
 data.setCell(1, 2, 'myfirsttestpackeage.clsUserSignUp')
-data.setCell(1, 3, 6);
+data.setCell(1, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -289,15 +293,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">fnUserRegForm([aaa1WWW, TRTRT123, 7, Security Ans1, 1, F Name1, M Name1, L Name1, 1, 1, 25/03/1998, 2, 892484YUT62...)</span>
-                <span class="method-start">4583 ms</span>
+                <span class="method-start">4871 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Confirm</span>
-                <span class="method-start">78223 ms</span>
+                <span class="method-start">22336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">78231 ms</span>
+                <span class="method-start">22349 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
