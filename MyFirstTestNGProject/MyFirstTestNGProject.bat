@@ -1,10 +1,10 @@
 
-set projectLocation=C:\Users\Sharath.bannanje\workspace_testng\MyFirstTestNGProject
+set projectLocation=D:\GitRepoProjects\MyFirstTestNGProject
  
 cd %projectLocation%
- 
-set classpath=%projectLocation%\bin;C:\Users\Sharath.bannanje\.p2\pool\plugins\*
- 
-java org.testng.TestNG %projectLocation%\testng.xml
- 
+
+D: 
+
+java -cp "%projectLocation%\bin;%projectLocation%\lib\*" org.testng.TestNG testing.xml
+
 pause
