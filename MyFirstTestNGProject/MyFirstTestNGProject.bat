@@ -1,6 +1,5 @@
+set projectLocation=C:\Program Files (x86)\Jenkins\workspace\MyFirstTestNGProject_GIT\MyFirstTestNGProject
 
-set projectLocation=D:\GitRepoProjects\MyFirstTestNGProject
- 
 cd %projectLocation%
 
 D: 
